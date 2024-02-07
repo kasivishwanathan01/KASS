@@ -92,7 +92,11 @@
     });
     
     
-    
+    //disabiling right click menu
+    document.addEventListener('contextmenu',
+                              function(event){
+                                  event.preventDefault()
+                              })
     // Portfolio filter
     var portfolioIsotope = $('.portfolio-container').isotope({
         itemSelector: '.portfolio-item',
