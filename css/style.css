@@ -1617,3 +1617,42 @@ a:focus {
     margin: 0 10px; /* Adjust margins as needed */
     /* Add any other CSS styling you want */
   }
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.whatsapp-container {
+    position: fixed;
+    bottom: 20px; /* Distance from the bottom */
+    left: 20px; /* Distance from the left */
+    z-index: 1000; /* Ensure it's above other elements */
+}
+
+.whatsapp-link {
+    display: block;
+    text-decoration: none;
+}
+
+.whatsapp-icon {
+    width: 60px; /* Icon size */
+    height: 60px;
+    border-radius: 50%; /* Make it circular */
+    background-color: #25d366; /* WhatsApp green background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for visibility */
+    transition: transform 0.3s ease-in-out;
+}
+
+.whatsapp-icon img {
+    width: 30px; /* Adjust the icon size inside the circle */
+    height: 30px;
+}
+
+.whatsapp-icon:hover {
+    transform: scale(1.2); /* Slight zoom effect on hover */
+}
